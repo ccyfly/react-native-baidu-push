@@ -24,7 +24,9 @@ class RNReactNativeBaiduPush {
             let obj = {};
             obj.title = data.title;
             obj.description = data.description;
-            obj.customContentString = JSON.parse(data.customContentString);
+            obj.extraData = JSON.parse(data.extraData);
+            obj.foreground = data.foreground;
+            obj.userInteraction = data.userInteraction;
             callBack(obj);
         });
     }

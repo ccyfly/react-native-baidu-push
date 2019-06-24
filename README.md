@@ -24,7 +24,7 @@
   	```
 3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
   	```
-      compile project(':react-native-my-baidu-push')
+      implement project(':react-native-my-baidu-push')
   	```
 
 
@@ -34,5 +34,6 @@ import RNReactNativeBaiduPush from 'react-native-my-baidu-push';
 
 // TODO: What to do with the module?
 RNReactNativeBaiduPush;
+
 ```
   
