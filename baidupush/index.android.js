@@ -1,4 +1,4 @@
-import { NativeModules } from 'react-native';
+import { DeviceEventEmitter, NativeModules } from 'react-native';
 
 const { RNReactNativeBaiduPushModule } = NativeModules;
 
@@ -32,7 +32,7 @@ class RNReactNativeBaiduPush {
     }
     testPrint(message) {
         RNReactNativeBaiduPushModule.testPrint(message);
-    } 
+    }
 }
 
-export default RNReactNativeBaiduPush;
+export default new RNReactNativeBaiduPush();
