@@ -1,3 +1,3 @@
-import RNReactNativeBaiduPush from './baidupush';
+import RNReactNativeBaiduPush from './baidupush/index';
 
 export default RNReactNativeBaiduPush;

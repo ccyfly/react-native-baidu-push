@@ -1,6 +1,7 @@
 {
   "name": "react-native-my-baidu-push",
-  "version": "1.0.9",
+  "version": "1.0.10",
+  "main": "index.js",
   "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
