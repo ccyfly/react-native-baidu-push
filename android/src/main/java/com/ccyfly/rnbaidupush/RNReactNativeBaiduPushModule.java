@@ -40,7 +40,7 @@ public class RNReactNativeBaiduPushModule extends ReactContextBaseJavaModule {
 
   @Override
   public String getName() {
-    return "RNReactNativeBaiduPush";
+    return "RNReactNativeBaiduPushModule";
   }
 
   private void registerNotificationsRegistration() {
