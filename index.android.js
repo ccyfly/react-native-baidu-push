@@ -30,6 +30,9 @@ class RNReactNativeBaiduPush {
             callBack(obj);
         });
     }
+    testPrint(message) {
+        RNReactNativeBaiduPushModule.testPrint(message);
+    } 
 }
 
 export default RNReactNativeBaiduPush;

@@ -44,7 +44,8 @@ public class RNReactNativeBaiduPushModule extends ReactContextBaseJavaModule {
   }
 
   private void registerNotificationsRegistration() {
-    IntentFilter intentFilter = new IntentFilter(getReactApplicationContext().getPackageName() + ".RNBaiduPushNotificationRegisteredToken");
+    IntentFilter intentFilter = new IntentFilter(
+        getReactApplicationContext().getPackageName() + ".RNBaiduPushNotificationRegisteredToken");
 
     getReactApplicationContext().registerReceiver(new BroadcastReceiver() {
       @Override
@@ -58,5 +59,10 @@ public class RNReactNativeBaiduPushModule extends ReactContextBaseJavaModule {
         mJsDelivery.sendEvent("baiduNotificationsRegistered", params);
       }
     }, intentFilter);
+  }
+
+  @ReactMethod
+  public void testPrint(String name) {
+    Log.i("momomo", name);
   }
 }
