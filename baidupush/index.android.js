@@ -31,7 +31,7 @@ class RNReactNativeBaiduPush {
         });
     }
     testPrint(message) {
-        console.log('aa', nativePush);
+        console.log('nativePush.testPrint', message);
         nativePush.testPrint(message);
     }
 }
