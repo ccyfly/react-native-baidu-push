@@ -1,6 +1,6 @@
 import { NativeModules } from 'react-native';
 
-const { RNReactNativeBaiduPush } = NativeModules;
+const { RNReactNativeBaiduPushModule } = NativeModules;
 
 const DEVICE_NOTIF_EVENT = 'baiduNotificationReceived';
 const NOTIF_REGISTER_EVENT = 'baiduNotificationsRegistered';
