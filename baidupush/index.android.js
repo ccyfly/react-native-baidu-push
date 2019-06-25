@@ -1,6 +1,6 @@
 import { DeviceEventEmitter, NativeModules } from 'react-native';
 
-const { RNReactNativeBaiduPushModule } = NativeModules;
+const nativePush = NativeModules.RNReactNativeBaiduPushModule;
 
 const DEVICE_NOTIF_EVENT = 'baiduNotificationReceived';
 const NOTIF_REGISTER_EVENT = 'baiduNotificationsRegistered';
@@ -31,8 +31,9 @@ class RNReactNativeBaiduPush {
         });
     }
     testPrint(message) {
-        RNReactNativeBaiduPushModule.testPrint(message);
+        console.log('aa', nativePush);
+        nativePush.testPrint(message);
     }
 }
 
-export default new RNReactNativeBaiduPush();
+export default RNReactNativeBaiduPush;
