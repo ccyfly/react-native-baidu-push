@@ -28,6 +28,8 @@ public class RNReactNativeBaiduPushModule extends ReactContextBaseJavaModule {
   static public String DidOpenMessage = "DidOpenMessage";
   static public String channelId = "";
   static public String userId = "";
+  static public String BaiduNotificationsRegistered = "baiduNotificationsRegistered";
+  static public String BaiduNotificationReceived = "baiduNotificationReceived";
 
   private RNBaiduPushNotificationJsDelivery mJsDelivery;
 
@@ -62,7 +64,7 @@ public class RNReactNativeBaiduPushModule extends ReactContextBaseJavaModule {
   }
 
   @ReactMethod
-  public void testPrint(String name) {
-    Log.i("momomo", name);
+  public void testPrint(String message) {
+    Log.d("RNReactNativeBaiduPushModule", message);
   }
 }
