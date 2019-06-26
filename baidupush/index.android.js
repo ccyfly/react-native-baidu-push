@@ -35,4 +35,4 @@ class RNReactNativeBaiduPush {
     }
 }
 
-export default RNReactNativeBaiduPush;
+export default new RNReactNativeBaiduPush();
